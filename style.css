@@ -135,7 +135,7 @@ article a {
 }
 
 .date {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--gray-dark);
 }
 
@@ -212,7 +212,7 @@ footer .social-links a:hover {
 
 footer p {
   color: var(--black);
-  font-size: 0.45rem;
+  font-size: 0.7rem;
   margin-top: 0.5rem;
 }
 
