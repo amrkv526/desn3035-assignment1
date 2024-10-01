@@ -93,7 +93,7 @@ nav a:hover {
 /* Content */
 .content {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -146,7 +146,7 @@ article a {
 /* Newsletter Signup */
 
 .newsletter-signup {
-  max-width: 1200px; 
+  max-width: 900px; 
   padding: 20px; 
   background-color: var(--vanilla); 
   border-radius: 8px; 
@@ -310,7 +310,7 @@ footer p {
 }
 
 .about {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
