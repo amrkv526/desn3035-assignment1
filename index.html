@@ -1,26 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agne's Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #thank-you-message {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <h1>Welcome to my Blog</h1>
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </div>
     </header>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="article.html">Articles</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="article.html">Articles</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
     <div class="content">
-        <h2>Landing Page</h2>
-        <p>Welcome to the landing page of my blog.</p>
+      <div class="article">
+      <h2>Latest Article</h2>
+      <article>
+        <h3>Most Anticipated Toronto DJ Events</h3>
+        <p class="date">Published on: October 1, 2024</p>
+        <img src="assets/rave.jpg" alt="Rave scene" />
+        <p>
+          This fall, Toronto's techno scene is bringing some of the most
+          electrifying DJ sets to the city's underground venues. With
+          cutting-edge soundscapes, these end-of-year performances are the most
+          anticipated by the techno crowd.
+        </p>
+        <a href="article.html">Read full article</a>
+      </article>
+
+      <div class="newsletter-signup">
+        <h2>Subscribe to my Newsletter</h2>
+        <p>Stay updated with the latest articles!</p>
+        <form id="newsletter-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <input type="submit" value="Subscribe" />
+        </form>
+        <p id="thank-you-message">
+          Thank you for subscribing to my newsletter!
+        </p>
+      </div>
     </div>
+  </div>
+
     <footer>
-        <p>&copy; 2024 Simple Blog. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/amrkv526" target="_blank"
+          ><img src="assets/github.png" alt="Github" width="40" height="40"
+        /></a>
+        <a href="https://www.linkedin.com/in/agne-m-38297160/" target="_blank"
+          ><img src="assets/linkedin.png" alt="LinkedIn" width="40" height="40"
+        /></a>
+      </div>
+      <p>&copy; 2024 Agne's Blog. All rights reserved.</p>
     </footer>
 
-</body>
+    <script>
+      document
+        .getElementById("newsletter-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          document.getElementById("thank-you-message").style.display = "block";
+        });
+    </script>
+  </body>
 </html>

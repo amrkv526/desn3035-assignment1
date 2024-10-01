@@ -1,0 +1,447 @@
+/* Global */
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray-light: #f0f0f0;
+  --gray-dark: #333;
+  --accent: #822e81ff;
+  --rose: #aa6373ff;
+  --vanilla: #f0f2a6ff;
+  --russian-violet: #392061ff;
+  --raisin-black: #1a1b25ff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--white);
+  color: var(--gray-dark);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--black);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--rose);
+  transition: color 0.3s ease;
+}
+
+/* Header */
+
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 800px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 2.5rem;
+}
+
+header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-light);
+  padding: 1rem 2rem;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+nav a:hover {
+  color: var(--rose);
+}
+
+
+/* Content */
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Article */
+
+article {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+article h3 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+article p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--gray-dark);
+  margin-bottom: 2rem;
+}
+
+article img {
+  width: 100%; 
+  height: auto;
+  margin: 3rem auto;
+  display: block;
+  border-radius: 10px;
+}
+
+article a {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  color: var(--russian-violet);
+}
+
+.date {
+  font-size: 1.3rem;
+  color: var(--gray-dark);
+}
+
+/* Newsletter Signup */
+
+.newsletter-signup {
+  max-width: 1200px; 
+  padding: 20px; 
+  background-color: var(--vanilla); 
+  border-radius: 8px; 
+  text-align: center; 
+  margin: 50px 0 auto;
+}
+
+.newsletter-signup h2 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+.newsletter-signup p {
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  width: 400px; 
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+
+.newsletter-signup input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 15px 80px;
+  margin: 18px;
+}
+
+.newsletter-signup input[type="submit"]:hover {
+  background-color: var(--rose);
+  transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+  background-color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 1rem;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+footer .social-links a:hover {
+  color: var(--accent);
+}
+
+footer p {
+  color: var(--black);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Contact Form */
+.contactform {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contactform h2 {
+  font-size: 2.1rem;
+}
+
+.contactform p {
+  font-size: 2rem;
+}
+
+.contactform label {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%; 
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.contactform textarea {
+  height: 150px; 
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.contactform input[type="submit"] {
+  width: auto; 
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactform input[type="submit"]:hover {
+  background-color: var(--rose);
+  transform: scale(1.02);
+}
+
+.thank-you-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.thank-you-message h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you-message p {
+  font-size: 1.5rem;
+}
+
+/* About */
+
+.about ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--gray-dark);
+}
+
+.about ul li {
+  padding: 1rem 0;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--russian-violet);
+}
+
+.about p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--gray-dark);
+  margin-bottom: 60px;
+}
+
+.about a {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.about-me {
+  margin-top: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .content {
+    padding: 1rem;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-signup input[type="email"],
+  .newsletter-signup input[type="submit"] {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  article h3 {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    width: 400px;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+
+  article p,
+  .about p {
+    font-size: 1.6rem;
+  }
+
+  .newsletter-signup input[type="email"],
+  .newsletter-signup input[type="submit"] {
+    width: 250px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  article h3 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    font-size: 1.4rem;
+  }
+
+  article p,
+  .about p {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-signup input[type="email"],
+  .newsletter-signup input[type="submit"] {
+    width: 100%;
+  }
+}
